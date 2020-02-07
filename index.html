@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <script src="js/jquery-2.2.3.min.js"></script>
+    <script src="js/index.js"></script>
+    <title>涉外政务服务平台</title>
+</head>
+
+<body>
+    <div id="head">
+        <span id="logo-text">涉外政务服务平台</span>
+        <span style="font-size: 28px;color: #ece8e8dc;">&emsp;|&emsp;</span>
+        <span style="font-size: 20px;font-weight: bold;">
+            <select name="address" id="address-select">
+                <option value="上海">上海</option>
+                <option value="北京">北京</option>
+                <option value="广州">广州</option>
+                <option value="四川">四川</option>
+                <option value="湖北">湖北</option>
+                <option value="湖南">湖南</option>
+            </select>
+        </span>
+        <span style="margin-top: 4px;position: absolute;right: 100px;">
+            <span style="margin-right: 50px;"><a href="login.html">登录</a></span>
+            <span>语言:</span>
+            <span>
+                <select name="language" id="language-select">
+                    <option value="中文">中文</option>
+                    <option value="English">English</option>
+                    <option value="日本語">日本語</option>
+                </select>
+            </span>
+        </span>
+    </div>
+    <div id="menu0">
+        <div id="menu">
+            <ul id="main-menu">
+                <li><a href="#">首页</a></li>
+                <li class="child-show"><a href="#">投资者</a>
+                    <ul class="child-menu">
+                        <li><a href="yuanshou.html">国家元首议程表</a></li>
+                        <li><a href="#">中国便车快通道</a></li>
+                        <li><a href="qyfn.html">区域资源赋能场</a></li>
+                    </ul>
+                </li>
+                <li class="child-show"><a href="#">留学者</a>
+                    <ul class="child-menu">
+                        <li><a href="#">中国教育</a></li>
+                        <li><a href="#">留学规划</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">旅游者</a></li>
+                <li><a href="#">工作者</a></li>
+                <li><a href="#">资料</a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="body">
+        <div id="picture-carousel">
+            <div id="picture-carousel0">
+                <div id="picture-1">
+                    <div>
+                        <img src="images/index-01.png" alt="">
+                    </div>
+                    <div class="picture-carousel-text">
+                        <span>习近平同俄罗斯总统普京举行会谈1</span>
+                    </div>
+                </div>
+                <div id="picture-2" class="un">
+                    <div>
+                        <img src="images/index-02.jpg" alt="">
+                    </div>
+                    <div class="picture-carousel-text">
+                        <span>习近平抵达雅典 开始对希腊共和国进行国事访问</span>
+                    </div>
+                </div>
+                <div id="picture-3" class="un">
+                    <div>
+                        <img src="images/index-03.jpg" alt="">
+                    </div>
+                    <div class="picture-carousel-text">
+                        <span>习近平同希腊总统帕夫洛普洛斯会谈</span>
+                    </div>
+                </div>
+                <div id="picture-4" class="un">
+                    <div>
+                        <img src="images/index-04.jpg" alt="">
+                    </div>
+                    <div class="picture-carousel-text">
+                        <span>习近平会见越南国会主席阮氏金银</span>
+                    </div>
+                </div>
+                <div id="picture-5" class="un">
+                    <div>
+                        <img src="images/index-05.jpg" alt="">
+                    </div>
+                    <div class="picture-carousel-text">
+                        <span>习近平会见孟加拉国总理哈西娜</span>
+                    </div>
+                </div>
+            </div>
+
+            <div id="circle">
+                <div id="circle1" style="position: absolute;right: 50px;">
+                    <div class="circle" onclick="buttonl(1)"></div>
+                    <div class="circle" onclick="buttonl(2)"></div>
+                    <div class="circle" onclick="buttonl(3)"></div>
+                    <div class="circle" onclick="buttonl(4)"></div>
+                    <div class="circle" onclick="buttonl(5)"></div>
+                </div>
+            </div>
+        </div>
+
+        <div id="service-object">
+            <div class="line-text">服务对象</div>
+            <div class="line"></div>
+            <div id="service-object-imgs">
+                <a href="#">
+                    <div>
+                        <img src="images/index/index-01.png" alt="">
+                        <div class="img-txt">投资者</div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="img">
+                        <img src="images/index/index-02.png" alt="">
+                        <div class="img-txt">留学者</div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="img">
+                        <img src="images/index/index-03.png" alt="">
+                        <div class="img-txt">旅游者</div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="img">
+                        <img src="images/index/index-04.png" alt="">
+                        <div class="img-txt">工作者</div>
+                    </div>
+                </a>
+
+            </div>
+        </div>
+        <div style="clear: both;"></div>
+        <div id="shortcut-entry">
+            <div class="line-text">快捷入口</div>
+            <div class="line"></div>
+            <div id="shortcut-entry-imgs">
+                <a href="yuanshou.html">
+                    <div>
+                        <img src="images/index/index-05.png" alt="">
+                        <div class="img-txt">国家元首议程表</div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="img1">
+                        <img src="images/index/index-06.png" alt="">
+                        <div class="img-txt">中国便车快通道</div>
+                    </div>
+                </a>
+                <a href="qyfn.html">
+                    <div class="img1">
+                        <img src="images/index/index-07.png" alt="">
+                        <div class="img-txt">区域资源赋能场</div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <!--intelligence-topic-->
+        <div id="intelligence-topic">
+            <div class="line-text">
+                <span>智能专题报道</span>
+                <span class="more">
+                    <a href="#">更多</a>
+                </span>
+            </div>
+            <div class="line"></div>
+            <div id="intelligence-topic-imgs">
+                <a href="#">
+                    <div>
+                        <img src="images/index/index-08.png" alt="">
+                        <div class="intelligence-topic-title">商务部：欢迎俄罗斯大豆产区积极拓展对华合作</div>
+                        <div class="intelligence-topic-text">高峰表示，目前中俄大豆合作主要集中在远东地区。中方欢迎俄罗斯欧洲部分的大豆产区积极拓展对华合作...</div>
+                        <div class="intelligence-topic-text1">中国政府网<br>2019/08/01</div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="img">
+                        <img src="images/index/index-09.png" alt="">
+                        <div class="intelligence-topic-title">第六届中国－俄罗斯博览会在哈尔滨举行</div>
+                        <div class="intelligence-topic-text">当日，第六届中国－俄罗斯博览会在黑龙江哈尔滨开幕，共有来自74个国家和地区的105个政府经贸团组及海...</div>
+                        <div class="intelligence-topic-text1">新华社<br>2019/06/15</div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="img">
+                        <img src="images/index/index-10.png" alt="">
+                        <div class="intelligence-topic-title">王岐山出席第六届中国－俄罗斯博览会</div>
+                        <div class="intelligence-topic-text">6月14日至15日，国家副主席王岐山在哈尔滨出席第六届中国－俄罗斯博览会和第二届中俄地方合作论坛开幕式....
+                        </div>
+                        <div class="intelligence-topic-text1">新华社<br>2019/06/15</div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="img">
+                        <img src="images/index/index-11.png" alt="">
+                        <div class="intelligence-topic-title">吴政平局长出席第五届中国-俄罗斯博览会组委会会议并发言</div>
+                        <div class="intelligence-topic-text">第五届中国-俄罗斯博览会（以下简称“博览会”）于7月9-12日在俄罗斯叶卡捷琳堡成功举办。</div>
+                        <div class="intelligence-topic-text1">商务部外贸发展局<br>2018/04/27</div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div style="clear: both;"></div>
+        <!--modular-->
+        <div id="modular">
+            <div>
+                <div class="modular-ico">
+                    <img src="images/index/ico/ico-01.png">
+                </div>
+                <div class="modular-title">热门服务</div>
+                <hr>
+                <div class="modular-text">
+                    <a href="#">
+                        <div>设立变更</div>
+                    </a>
+                    <a href="#">
+                        <div>准营准办</div>
+                    </a>
+                    <a href="#">
+                        <div>户籍办理</div>
+                    </a>
+                    <a href="#">
+                        <div>证件办理</div>
+                    </a>
+                </div>
+
+            </div>
+            <div class="modular-left">
+                <div class="modular-ico">
+                    <img src="images/index/ico/ico-02.png">
+                </div>
+                <div class="modular-title">合作领域</div>
+                <hr>
+                <div class="modular-text">
+                    <a href="#">
+                        <div>金 融</div>
+                    </a>
+                    <a href="#">
+                        <div>科 技</div>
+                    </a>
+                    <a href="#">
+                        <div>经 贸</div>
+                    </a>
+                    <a href="#">
+                        <div>人文交流</div>
+                    </a>
+                </div>
+
+
+            </div>
+            <div class="modular-left">
+                <div class="modular-ico">
+                    <img src="images/index/ico/ico-03.png">
+                </div>
+                <div class="modular-title">区域投资</div>
+                <hr>
+                <div class="modular-text">
+                    <a href="#">
+                        <div>上 海</div>
+                    </a>
+                    <a href="#">
+                        <div>四 川</div>
+                    </a>
+                    <a href="#">
+                        <div>广 东</div>
+                    </a>
+                    <a href="#">
+                        <div>海 南</div>
+                    </a>
+                </div>
+
+            </div>
+            <div class="modular-left">
+                <div class="modular-ico">
+                    <img src="images/index/ico/ico-04.png">
+                </div>
+                <div class="modular-title">中介服务</div>
+                <hr>
+                <div class="modular-text">
+                    <a href="#">
+                        <div>咨询评估类</div>
+                    </a>
+                    <a href="#">
+                        <div>安全评价类</div>
+                    </a>
+                    <a href="#">
+                        <div>测量调查类</div>
+                    </a>
+                    <a href="#">
+                        <div>勘察设计类</div>
+                    </a>
+                </div>
+
+            </div>
+            <div class="modular-left">
+                <div class="modular-ico">
+                    <img src="images/index/ico/ico-05.png">
+                </div>
+                <div class="modular-title">市场服务</div>
+                <hr>
+                <div class="modular-text">
+                    <a href="#">
+                        <div>景点推荐</div>
+                    </a>
+                    <a href="#">
+                        <div>向导推荐</div>
+                    </a>
+                    <a href="#">
+                        <div>订票服务</div>
+                    </a>
+                    <a href="#">
+                        <div>住宿服务</div>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+    <div style="clear: both;"></div>
+    <div id="footer">
+        <div>
+            <div id="footer-img">
+                <img src="./images/reg-footer.jpg">
+            </div>
+            <div id="footer-text">
+                <table>
+                    <tr>
+                        <th class="text">我们</th>
+                        <th class="text">案例</th>
+                        <th class="text">方案</th>
+                        <th class="text">发现</th>
+                        <th class="text1">联系我们</th>
+                    </tr>
+                    <tr>
+                        <td>服务项目</td>
+                        <td>全部</td>
+                        <td>移动互联网</td>
+                        <td>战略伙伴</td>
+                        <td>地址：XXX省XXX市XXX县XXX路XXX号</td>
+                    </tr>
+                    <tr>
+                        <td>服务项目</td>
+                        <td>网站</td>
+                        <td>在线金融</td>
+                        <td>官方博客</td>
+                        <td>客服QQ：258506508</td>
+                    </tr>
+                    <tr>
+                        <td>服务项目</td>
+                        <td>移动app</td>
+                        <td>传统企业转型</td>
+                        <td>留言板</td>
+                        <td>电话：020-000000 020-000000 </td>
+                    </tr>
+                    <tr>
+                        <td>服务项目</td>
+                        <td>桌面软件</td>
+                        <td>医疗健康</td>
+                        <td>友情链接</td>
+                        <td>邮箱：xxx@.co.m</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
